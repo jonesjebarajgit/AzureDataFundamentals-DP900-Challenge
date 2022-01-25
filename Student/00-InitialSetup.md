@@ -1,6 +1,6 @@
 # Initial Setup : Guide
 
-**[Home](./README.md)** - [Next Challenge >](./01-Background.md)
+**[Home](../README.md)** - [Next Challenge >](./01-Background.md)
 
 ## Setting up Permissions 
 
