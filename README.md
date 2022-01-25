@@ -41,25 +41,11 @@ The technical learning objectives:
 - Public Github Repository
 
 ## Repository Contents
-- `../Coach`
-    - Coach's Guide
 - `../images`
     - Generic image files needed
 - `../Student`  
     - Student Challenges
-- `../Coach/LabDeployment`
+- `../setup/LabDeployment`
     - ARM Templates 
     - Powershell Scripts 
     - Data for deploying the lab environment
-
-## Contributors
-### Microsoft Government Team :
-- [Chris Baudo](https://github.com/chrisbaudo) 
-- [Binh Cao](https://github.com/binhcaomsft) 
-- [Jon Biggs](https://github.com/jobiggs) 
-- [Islam El-Ghazali ](https://github.com/islamtg)
-- [Sam Abouissa](https://github.com/samy5317)
-- [Solomon Woldesenbet](https://github.com/solomonwSLG)
-- [Amanda Howard](https://github.com/amandajeanhoward11)
-- [Madhu Chanthati](https://github.com/machanth)
-- [Chris Blevins](https://github.com/blevinscm)
