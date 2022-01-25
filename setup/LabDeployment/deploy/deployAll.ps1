@@ -2,13 +2,13 @@ param(
     [string]$teamCount = "1",
     [string]$deploymentTemplateFile = "$PSScriptRoot\ARM\azuredeploy.json",
     [string]$deploymentParameterFile = "$PSScriptRoot\ARM\azuredeploy.parameters.json",
-    [string]$location = "eastus",
-	[string]$region = "eastus"
+    [string]$location = "eastus"
+#	[string]$region = "eastus"
 #    [securestring]$sqlAdminLoginPassword,
 #    [securestring]$vmAdminPassword
 )
 #$teamCount = Read-Host "How many teams are hacking?";
-#$region = Read-Host "What Region Resources be deployed to (i.e. centralus, southcentralus, japaneast, etc)?";
+$region = Read-Host "What Region Resources be deployed to (i.e. eastus, centralus, etc)?";
 
 for ($i = 1; $i -le $teamCount; $i++)
 {
@@ -18,7 +18,7 @@ for ($i = 1; $i -le $teamCount; $i++)
         $teamName = "0" + $i;
     }
     
-    $resourceGroupName = "mdw-oh-" + $teamName + "-" + $region
+    $resourceGroupName = "dwh-oh-" + $teamName + "-" + $region
     $deploymentName = "azuredeploy" + "-" + (Get-Date).ToUniversalTime().ToString('MMdd-HHmmss')
     Write-Host("Now deploying RG to " + $resourceGroupName);
 
