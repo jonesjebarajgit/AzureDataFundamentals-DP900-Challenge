@@ -20,7 +20,7 @@ The technical learning objectives:
 
 ## Challenges
 
-- Initial Setup:**[Initial Setup](https://github.com/jonesjebarajgit/AzureAnalyticsOH/blob/76fc34f2bf807a9a4993f2bd191c5be8cad49fff/Student/00-InitialSetup)**
+- Initial Setup: **[Initial Setup](Student/00-InitialSetup.md)**
   - Initial Setup for the challenge
 - Challenge 1: **[Background](Student/01-Background.md)**
    - Prepare for the challenge
