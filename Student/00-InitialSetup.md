@@ -1,18 +1,18 @@
-# Challenge 0: Coach's Guide
+# Initial Setup : Guide
 
 **[Home](README.md)** - [Next Challenge >](./01-Background.md)
 
 ## Setting up Permissions 
 
-Before continuing ensure you understand the permissions needed to run the WhatTheHack on your Azure subscription.
+Before continuing ensure you understand the permissions needed to run the hack on your Azure subscription.
 
 Attendees should have Azure subscription permissions which allow the creation of resources in their resource group. Additionally, attendees should have sufficient subscription permissions to create service principals in Azure AD and to register applications in Azure AD. Typically, all that is required is a user account with `Owner` role on their resource group.
 
 ## Common Azure Resources
 
-The following is a list of common Azure resources that are deployed and utilized during the WhatTheHack. 
+The following is a list of common Azure resources that are deployed and utilized during the hack. 
 
-Ensure that these services are not blocked by Azure Policy.  As this is an WhatTheHack, the services that attendees can utilize are not limited to this list so subscriptions with a tightly controlled service catalog may run into issues if the service an attendee wishes to use is disabled via policy.
+Ensure that these services are not blocked by Azure Policy.  As this is an open hack, the services that attendees can utilize are not limited to this list so subscriptions with a tightly controlled service catalog may run into issues if the service an attendee wishes to use is disabled via policy.
 
 | Azure resource           | Resource Providers |
 | ------------------------ | --------------------------------------- |
@@ -29,7 +29,7 @@ Ensure that these services are not blocked by Azure Policy.  As this is an WhatT
 
 ## Attendee Computers
 
-Attendees will be required to install software on the workstations that they are performing the WhatTheHack on. Ensure they have adequate permissions to perform software installation.
+Attendees will be required to install software on the workstations that they are performing the hack on. Ensure they have adequate permissions to perform software installation.
 
 ## Deployment Instructions 
 
@@ -61,23 +61,16 @@ Attendees will be required to install software on the workstations that they are
     Select-AzSubscription -Subscription <The selected Subscription Id>
     ```
 
-6. Assign the `$sqlpwd` and `$vmpwd` variables in your PowerShell session as **Secure Strings**. Be sure to use a strong password for both. Follow [this link](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm) for Virtual Machine password requirements and [this link](https://docs.microsoft.com/en-us/sql/relational-databases/security/password-policy?view=sql-server-2017#password-complexity) for SQL Server.
-
-    ```powershell
-    $sqlpwd = "ThePasswordYouWantToUseForSQL" | ConvertTo-SecureString -AsPlainText -Force
-    $vmpwd = "ThePasswordYouWantToUseForTheVM" | ConvertTo-SecureString -AsPlainText -Force
-    ``` 
-
-7. If you have not already done so, you will need to download the `LabDeployment` folder from the repository.  You can use the following command to clone the repo to the current directory:
+6. If you have not already done so, you will need to download the `LabDeployment` folder from the repository.  You can use the following command to clone the repo to the current directory:
 
    ```shell
-   git clone https://github.com/microsoft/WhatTheHack.git
+   git clone https://github.com/jonesjebarajgit/AzureAnalyticsOH.git
    ```
    
-8. Execute the following from the `LabDeployment\deploy` directory of the WhatTheHack repository clone to deploy the environment (this process may take 10-15 minutes):
+7. Execute the following from the `LabDeployment\deploy` directory of the hack repository clone to deploy the environment (this process may take 10-15 minutes):
 
     ```powershell
-     .\deployAll.ps1 -sqlAdminLoginPassword $sqlpwd -vmAdminPassword $vmpwd
+     .\deployAll.ps1 -
     ```
 
 ### Manual step - Assigning Users to Each Resource Group 
