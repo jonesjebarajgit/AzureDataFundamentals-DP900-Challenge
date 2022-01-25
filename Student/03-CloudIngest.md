@@ -19,7 +19,7 @@ However, the team must be able to explain the thought process behind the decisio
 
 At present, encryption and access control is not a requirement for the data.
 
-The team will find the following resources in the WhatTheHack lab subscription.
+The team will find the following resources in the hack lab subscription.
 
 ### Caladan Resources
 
@@ -34,7 +34,7 @@ The team's coach can provide credentials for the SQL database. They are also ava
 **Note:** Each team member should add their Client IP to the database if they are going to connect from their home machine via Azure Data Studio, etc.  
 
 Alternatively, the team may [set the Active Directory Admin](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-aad-authentication-configure#provision-an-azure-active-directory-administrator-for-your-azure-sql-database-server)
-to one of the provided WhatTheHack accounts.
+to one of the provided hack accounts.
 
 ## Success Criteria
 
