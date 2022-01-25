@@ -21,7 +21,7 @@ with access limited to those who truly require it for business reasons.
 
 ## Description
 
-The team has the freedom during What the Hack to choose the solutions which best fit the needs of solution.
+The team has the freedom during the Hack to choose the solutions which best fit the needs of solution.
 However, the team must be able to explain the thought process behind the decisions to the team's coach.
 
 At present, encryption is not a requirement for the data.
