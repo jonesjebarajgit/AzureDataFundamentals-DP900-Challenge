@@ -1,6 +1,6 @@
 # Initial Setup : Guide
 
-**[Home](README.md)** - [Next Challenge >](./01-Background.md)
+**[Home](./README.md)** - [Next Challenge >](./01-Background.md)
 
 ## Setting up Permissions 
 
@@ -88,7 +88,7 @@ Resource Groups exist for each of the teams, members are in each team appropriat
 
 Prerequisites/other things to check for each team:
 
-The deployment of the COVID19 Modern Data Warehousing WhatTheHack Lab environment includes the following for each team.
+The deployment of the COVID19 Modern Data Warehousing hack Lab environment includes the following for each team.
 
 ##### COVID Policy Resources
 
@@ -111,7 +111,7 @@ This deployment template links each of the others. The only dependency between t
 
 ##### Parameters
 
-Note that using the `azuredeploy.parameters.json` will supply most of these parameters for you. The ones which need attention at deployment time have been marked in **bold** below.
+Note that using the `azuredeploy.parameters.json` will supply most of these parameters for you. 
 
 - sqlAdminLogin: The SQL administrator username for **all** SQL DBs in this deployment.
 - **sqlAdminLoginPassword**: The password for the SqlAdminLogin on **all** SQL DBs in this deployment.
