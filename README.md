@@ -21,7 +21,7 @@ The technical learning objectives:
 ## Challenges
 
 - Initial Setup:**[Initial Setup](Student/00-InitialSetup.md)**
-  - Prepare for the challenge
+  - Initial Setup for the challenge
 - Challenge 1: **[Background](Student/01-Background.md)**
    - Prepare for the challenge
 - Challenge 2: **[Provision](Student/02-Provision.md)**
