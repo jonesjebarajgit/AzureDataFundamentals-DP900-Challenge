@@ -37,10 +37,6 @@ it should be grouped by the source system of record:
 The team's coach can provide VM login information,
 or the team can [reset the VM's administrator login information](https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/reset-rdp#reset-by-using-the-azure-portal).
 By default, the lab setup process uses `vmadmin` as the VM administrator username.
-
-The team's coach can provide VM login information,
-or the team can [reset the VM's administrator login information](https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/reset-rdp#reset-by-using-the-azure-portal).
-By default, the lab setup process uses `vmadmin` as the VM administrator username.
 By default, the lab setup process uses `sqladmin` as the SQL administrator login username.
 
 ## Success Criteria
@@ -72,7 +68,7 @@ apply to the selected format.
     the self-hosted integration runtime is ideally installed on a separate
     machine from the one that hosts the data itself (e.g., on a
     [jumpbox](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/n-tier-sql-server#architecture)).
-    For the scope of this WhatTheHack, it is acceptable to install the runtime on the machine which hosts the data.
+    For the scope of this hack, it is acceptable to install the runtime on the machine which hosts the data.
 - It is only required that the team persists **their authored solutions** to
 version control.
 
