@@ -103,6 +103,14 @@ The deployment of the COVID19 Modern Data Warehousing hack Lab environment inclu
 
 - Synapse Workspace as a potential target data store
 
+##### Cosmos db policy data manual loading steps 
+
+If the data in the cosmos db is not available, please follow manual steps to load it. 
+
+1. Download Azure document db data migration tool from https://www.microsoft.com/en-us/download/details.aspx?id=46436 
+2. Follow the instructions in the migration tool document to load CSV data from your repo to cosmos db through dbui application
+
+
 ## More detail on the usage of the services
 
 ##### azuredeploy.json
