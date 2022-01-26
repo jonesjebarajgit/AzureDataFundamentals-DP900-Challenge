@@ -11,7 +11,7 @@ param (
 $dataFolder = "data/"
 $covidFileName = "covid_policy_tracker.csv"
 
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+#[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri https://www.microsoft.com/en-us/download/details.aspx?id=46436 -OutFile dt-1.7.zip
 Expand-Archive -Path dt-1.7.zip -DestinationPath .
 $dtutil = Get-ChildItem -Recurse | Where-Object { $_.Name -ieq "Dt.exe" }
