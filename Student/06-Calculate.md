@@ -1,6 +1,6 @@
 # Challenge 6: Calculate and DW Load
 
-[< Previous Challenge](./05-TransformLoad.md) - **[Home](../README.md)**
+[< Previous Challenge](./05-TransformLoad.md) - **[Home](../README.md)** - [Next Challenge >](./07-ImplementDataOps.md)
 
 ## Introduction
 
