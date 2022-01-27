@@ -21,7 +21,7 @@ such that all changes to the solution under source control must be approved by a
 
 ## Description
 
-- One of Caladan's most immediate needs will be to creata a normalized operational (ODS) as a intermediate data store to combine metric data with policy data. 
+- One of Caladan's most immediate needs will be to create a normalized operational (ODS) as a intermediate data store to combine metric data with policy data. 
     - The creation of this intermediate dataset is the team's opportunity
     to give the various downstream consumers a single location from which to load all
     of the data from all source systems which has been cleaned and normalized.
