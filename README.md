@@ -43,7 +43,7 @@ The technical learning objectives:
 - Azure CLI
 - Azure Data Explorer
 - Azure Storage Explorer
-- Public Github Repository
+- Public Azure DevOps or Github Repository
 
 ## Repository Contents
 - `../images`
