@@ -33,3 +33,10 @@ The credentials for your environment.
 - **VM Password**   Password.1!!
 - **SQL Username**   sqladmin
 - **SQL Password**  Password.1!!
+
+## Success Criteria 
+
+1. The team has created a single slide solution architecture which covers all the requirements outlined (you will be using this architecture document during your final presentation as well)
+2. There is no right or wrong solution but team should be able to follow data consulting concepts and should be able to explain their solution
+3. The team is free to select the technology of their choice but should be able to explain the rational behind the decision
+
