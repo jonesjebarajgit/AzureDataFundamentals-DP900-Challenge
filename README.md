@@ -34,7 +34,9 @@ The technical learning objectives:
    - Configure data pipelines to transform and load the data into usable sources for a Data Warehouse.
 - Challenge 6: **[Calculate and DW Load](Student/06-Calculate.md)**
    - Create Data Warehouse and calculations for growth vs policy. 
-
+- Challenge 7: **[Implement DataOps](Student/07-ImplementDataOps.md)**
+   - Implement development and operational efficiency through DataOps. 
+   
 ## Prerequisites
 - Your own Azure subscription with Owner access
 - Visual Studio Code
