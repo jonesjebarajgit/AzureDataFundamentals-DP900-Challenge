@@ -14,7 +14,7 @@ This will set the stage for incorporating additional data from the on-premise co
 
 ## Description
 
-The team has the freedom during WhatTheHack to choose the solutions which best fit the needs of Caladan.
+The team has the freedom during hack to choose the solutions which best fit the needs of Caladan.
 However, the team must be able to explain the thought process behind the decisions to the team's coach.
 
 At present, encryption and access control is not a requirement for the data.
