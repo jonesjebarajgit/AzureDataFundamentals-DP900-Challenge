@@ -61,10 +61,10 @@ Attendees will be required to install software on the workstations that they are
     Select-AzSubscription -Subscription <The selected Subscription Id>
     ```
 
-6. If you have not already done so, you will need to download the `LabDeployment` folder from the repository.  You can use the following command to clone the repo to the current directory:
+6. If you have not already done so, fork this repository into your own git handle and use the following command to clone the repo to the current directory on local computer:
 
    ```shell
-   git clone https://github.com/jonesjebarajgit/AzureAnalyticsOH.git
+   git clone https://github.com/<your git handle>/AzureAnalyticsOH.git
    ```
    
 7. Execute the following from the `LabDeployment\deploy` directory of the hack repository clone to deploy the environment (this process may take 10-15 minutes):
