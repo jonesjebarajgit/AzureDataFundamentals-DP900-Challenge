@@ -1,22 +1,18 @@
 
 # Azure Data Fundamentals - COVID 19 Challenge
 ## Introduction
-This hack is designed so that the students will construct a fully functional Modern Data Pipeline utilizing COVID-19 data and then creating calcuations on growth vs policies enacted by different governments.  The process of collecting, organizing and making inferences based on different data sources is someting that most data practioners need to do at some point in there career.  This hack teaches how to do this in Azure.  
+This Challenge is designed so that the students will construct a fully functional Modern Data Pipeline utilizing COVID-19 data and help derive analytical insights.  The process of collecting, organizing and making inferences based on different data sources is someting that most data practioners need to do at some point in there career.  This challenge teaches how to do this in Azure.  
 **Note:  This lab is recommended to be done over at least three days.  Is it very in-depth and will test most students.**
 
 ## Learning Objectives
-In this hack you will be working to make a recommendation to a fictional government on the COVID-19 mitigation policies they should enact based on collecting, cleaning, correlating and examining avilable data sets. 
+In this challenge you will be collecting, cleaning, correlating and examining available data sets. 
 
 The technical learning objectives:
 
-1. Provision a Data Lake
-2. Land data in the Data Lake from Cloud resources (Relational and CosmosDB).
-3. Land data in the Data Lake from On-Premise resources (an Azure VM is used to simulate an on-prem store).
+1. Provision a Azure SQL Database, Cosmos DB, and Synapse Analytics
+2. Land data in the Synapse SQL Pool from Cloud resources (Azure SQL and CosmosDB).
 4. Create Data Pipelines to merge the datasets into usuable format.
-5. Define Star Schemas and create a Data Warehouse.
-6. Enact version control and administrive approval for all pull requests within Github.
-7. Perform calculations on Fact tables.
-8. Enable Unit Tests
+5. Execute queries to extract Analytical insights.
 
 ## Challenges
 
@@ -26,23 +22,13 @@ The technical learning objectives:
    - Prepare for the challenge
 - Challenge 2: **[Provision](Student/02-Provision.md)**
    - Provision a Data Storage solution for landing your COVID-19 data sources.
-- Challenge 3: **[Ingest from Cloud](Student/03-CloudIngest.md)**
+- Challenge 3: **[Ingest Data into DW](Student/03-CloudIngest.md)**
    - Ingest COVID-19 data sources from cloud resources.
-- Challenge 4: **[Ingest from On-Premises SQL DB](Student/04-OnPremIngest.md)**
+- Challenge 4: **[Analytics](Student/04-OnPremIngest.md)**
    - Ingest COVID-19 data sources from On-Premises resources.
-- Challenge 5: **[Staging and Transformation](Student/05-TransformLoad.md)**
-   - Configure data pipelines to transform and load the data into usable sources for a Data Warehouse.
-- Challenge 6: **[Calculate and DW Load](Student/06-Calculate.md)**
-   - Create Data Warehouse and calculations for growth vs policy. 
-- Challenge 7: **[Implement DataOps](Student/07-ImplementDataOps.md)**
-   - Implement development and operational efficiency through DataOps. 
    
 ## Prerequisites
 - Your own Azure subscription with Owner access
-- Visual Studio Code
-- Azure CLI
-- Azure Data Explorer
-- Azure Storage Explorer
 - Public Azure DevOps or Github Repository
 
 ## Repository Contents
