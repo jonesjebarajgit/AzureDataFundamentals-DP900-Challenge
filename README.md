@@ -1,5 +1,5 @@
 
-# Modern Data Warehouse - COVID 19
+# Azure Data Fundamentals - COVID 19 Challenge
 ## Introduction
 This hack is designed so that the students will construct a fully functional Modern Data Pipeline utilizing COVID-19 data and then creating calcuations on growth vs policies enacted by different governments.  The process of collecting, organizing and making inferences based on different data sources is someting that most data practioners need to do at some point in there career.  This hack teaches how to do this in Azure.  
 **Note:  This lab is recommended to be done over at least three days.  Is it very in-depth and will test most students.**
