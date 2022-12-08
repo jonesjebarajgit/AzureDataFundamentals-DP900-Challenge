@@ -30,7 +30,8 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
 1. Login to Azure Portal and create a new **resource group** where you can create all the resources needed for this challenge. 
 
    ```
-   Lets say <CollegeName>-Group#-rg 
+   Lets say <collegename>-group#-rg 
+   Eg: megha-group1-rg
    ```
 
 2. The latest version of the Azure PowerShell cmdlets do **NOT** work with this script. You will need to use an earlier version (noted below)
