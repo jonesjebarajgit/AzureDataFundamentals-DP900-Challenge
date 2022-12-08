@@ -1,42 +1,20 @@
-# Challenge 1: Background
+# Building Enterprise data estate
 
 **[Home](../README.md)** - [Next Challenge >](./02-Provision.md)
 
-Caladan is a midsize commonwealth with a total population of 3.2 million with two urban population centers in Duncan and Stillgard.
-The Coronavirus has not hit the commonwealth hard yet, but commonwealth leaders are concerned of a next wave as we move into spring.
-The government leaders need your help to create a policy plan for mitigation of this next wave.  
+In this exercise you have to provision a data warehouse and using ADF pipelines load data from both the source systems in Azure SQL and Cosmos DB into the warehouse.
 
-The government leaders would like to answer one simple question:
-What is the most unrestricitive policies they can implement to keep growth rate of deaths below 1% and the growth rate of new cases below 3% on a 30 day average?
-To accomplish this the Commonwealth has hired you and a team of consultants to analyze the global policies implemented by 10 represenatative countries to determine efficacy in keeping down Death and Cases growth rates.
 
-## Your Task
+# Provision a Synapse DW Pool for Data Warehouse enviornment:
 
-Your team will need to create a solution that extracts, cleans, loads and analyzes this current data.
-The solution needs to consider future use and expansion and be automated to run when new data is added and must kept and updated in source control.  
+From the azure portal, search for azure synapse analytics resource and provision a synapse workspace (say <collegename><group#>synapsews). Please note that you will have to create a data lake as well. Ensure that you make a note of the passwords for SQL server login.
 
-Your job:
-1. Create an enterprise Modern Data Pipeline solution that can be used for analysis and reporting by Caldan health and leadership officials
-2. Make a recommendation on policies to implement to meet the growth rate thresholds
-3. Document the solution business process and architecture
-4. Put the solution under source control so others can take over from where you leave off
+Once the synapse workspace is created, provision a SQL DW Pool with 100 DWU capacity. 
 
-The data you need is located in three places in your Azure environment:
-
-1. Policy data is located in a Cosmos DB (SQL API)
-2. Half of your countries are on a Virtual Machine within your environment to simulate pulling data from an on-premises data source
-3. The other half of your data is located in Azure SQL
-
-The credentials for your environment.
-
-- **VM Username**    vmadmin
-- **VM Password**   Password.1!!
-- **SQL Username**   sqladmin
-- **SQL Password**  Password.1!!
 
 ## Success Criteria 
 
-1. The team has created a 1-3 slide solution architecture which covers all the requirements (you will be using this architecture document during your final presentation as well)
-2. There is no right or wrong solution but team should be able to follow data consulting concepts and should be able to explain their solution and steps used to arrive at this solution
-3. The team is free to select the technology of their choice but should be able to explain the rational behind the decision
-
+1. The team has created a synapse DW Pool successfully
+2. Once the DW Pool is created, create the tables as given in the DDL scripts
+3. The team has created a data pipeline in ADF to load synapse tables from the source tables in Azure SQL and Cosmos DB
+4. Ensure that the tables are loaded properly
