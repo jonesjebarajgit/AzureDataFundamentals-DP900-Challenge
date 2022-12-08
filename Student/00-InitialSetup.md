@@ -36,17 +36,17 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
 2. Create SQL Database Server (logical) and load the database from the given dacpac file. 
 
     ```
-    a) Create SQL Database Server (logical) into the new created resource group. Name the SQL Database Server as **<collegename><group#>sqlserver**. Please note that this is a empty logical server with no database in it.
-    b) Once the SQL Database Server is created, under the **"Overview"** section, use the **"Import database"** feature and load the backup data in the dacpac file   into SQL Database Server. Name the database as **"covid19"**
+    a) Create SQL Database Server (logical) into the new created resource group. Name the SQL Database Server as <collegename><group#>sqlserver. Please note that this is a empty logical server with no database in it.
+    b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the dacpac file into SQL Database Server. Name the database as "covid19".
     ```
 
-3. Create a new Cosmos DB for NoSQL account with naming convension **<collegename><group#>cosmosdb**. Add a new container called **"covid19"** with autoscale database max RU/s set to 400. 
+3. Create a new Cosmos DB for NoSQL account with naming convension **"<collegename><group#>cosmosdb"**. Add a new container called **"covid19"** with autoscale database max RU/s set to 400. 
 
 4. Load the csv file **"covid_policy_tracker.csv"** into the Cosmos DB container **"covid19"** using Azure Data Factory 
 
     ```
-    a) Create a new Azure data factory instance in your resoruce group (say **<collegename><group#>adf**). 
-    b) Launch the data factory studio and use the copy data tool feature to load the data in the **"covid_policy_tracker.csv"** to cosmosdb **"covid19"** container.
+    a) Create a new Azure data factory instance in your resoruce group (say <collegename><group#>adf). 
+    b) Launch the data factory studio and use the copy data tool feature to load the data in the **"covid_policy_tracker.csv"** to cosmosdb "covid19" container.
      
     ```
 
