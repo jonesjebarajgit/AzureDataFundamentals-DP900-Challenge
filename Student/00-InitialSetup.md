@@ -27,9 +27,9 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
 
 ## Deployment Instructions 
 
-1. Login to Azure Portal and create a new resource group where you can create all the resources needed for this challenge. Open a **PowerShell 7** window, run the following command, if prompted, click **Yes to All**:
+1. Login to Azure Portal and create a new **resource group** where you can create all the resources needed for this challenge. 
 
-   ```PowerShell
+   ```
    Lets say <CollegeName>-Group#-rg 
    ```
 
