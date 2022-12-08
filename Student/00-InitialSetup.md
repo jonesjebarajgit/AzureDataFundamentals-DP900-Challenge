@@ -23,7 +23,6 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
 | Azure Data Lake Store    | Microsoft.DataLakeStore                 |
 | Azure Synapse            | Microsoft.Synapse                       |
 
-> Note:  Resource Provider Registration can be found at https://portal.azure.com/_yourtenantname_.onmicrosoft.com/resource/subscriptions/_yoursubscriptionid_/resourceproviders
 
 ## Deployment Instructions 
 
@@ -52,5 +51,4 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
     ```
 
 5. Now  you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured). These will act as 2 sources of data in this challenge. 
-
-    
+   
