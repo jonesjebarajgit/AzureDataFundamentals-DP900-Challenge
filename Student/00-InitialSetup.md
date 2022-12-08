@@ -4,13 +4,13 @@
 
 ## Setting up Permissions 
 
-Before continuing ensure you understand the permissions needed to run the hack on your Azure subscription.
+Before continuing ensure you understand the permissions needed to run the challenge on your Azure subscription.
 
 Attendees should have Azure subscription permissions which allow the creation of resources in their resource group. Additionally, attendees should have sufficient subscription permissions to create service principals in Azure AD and to register applications in Azure AD. Typically, all that is required is a user account with `Owner` role on their resource group.
 
 ## Common Azure Resources
 
-The following is a list of common Azure resources that are deployed and utilized during the hack. 
+The following is a list of common Azure resources that are required and utilized during the challenge. 
 
 Ensure that these services are not blocked by Azure Policy.  As this is an open hack, the services that attendees can utilize are not limited to this list so subscriptions with a tightly controlled service catalog may run into issues if the service an attendee wishes to use is disabled via policy.
 
@@ -18,18 +18,12 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
 | ------------------------ | --------------------------------------- |
 | Azure Cosmos DB          | Microsoft.DocumentDB 
 | Azure Data Factory       | Microsoft.DataFactory                   |
-| Azure Databricks         | Microsoft.Databricks                    |
 | Azure SQL Database       | Microsoft.SQL                           |
 | Azure Storage            | Microsoft.Storage                       |
 | Azure Data Lake Store    | Microsoft.DataLakeStore                 |
-| Azure Virtual Machines   | Microsoft.Compute                       |
 | Azure Synapse            | Microsoft.Synapse                       |
 
 > Note:  Resource Provider Registration can be found at https://portal.azure.com/_yourtenantname_.onmicrosoft.com/resource/subscriptions/_yoursubscriptionid_/resourceproviders
-
-## Attendee Computers
-
-Attendees will be required to install software on the workstations that they are performing the hack on. Ensure they have adequate permissions to perform software installation.
 
 ## Deployment Instructions 
 
