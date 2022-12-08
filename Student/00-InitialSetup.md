@@ -27,10 +27,10 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
 
 ## Deployment Instructions 
 
-1. Open a **PowerShell 7** window, run the following command, if prompted, click **Yes to All**:
+1. Login to Azure Portal and create a new resource group where you can create all the resources needed for this challenge. Open a **PowerShell 7** window, run the following command, if prompted, click **Yes to All**:
 
    ```PowerShell
-   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   Lets say <CollegeName>-Group#-rg 
    ```
 
 2. The latest version of the Azure PowerShell cmdlets do **NOT** work with this script. You will need to use an earlier version (noted below)
