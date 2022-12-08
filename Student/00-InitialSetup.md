@@ -6,9 +6,9 @@
 
 The goal of this challenge is to give students with hands-on experience of working with Azure Data Services. This challenge is broadly classified into 3 main sections: 
 
-Initial Setup
-Building Enterprise data estate
-Derive Insights
+1) Initial Setup 
+2) Building Enterprise data estate 
+3) Derive Insights
 
 ## Setting up Permissions 
 
