@@ -1,6 +1,14 @@
-# Initial Setup : Guide
+# Introduction and Initial Setup
 
 **[Home](../README.md)** - [Next Challenge >](./01-Background.md)
+
+## Introduction
+
+The goal of this challenge is to give students with hands-on experience of working with Azure Data Services. This challenge is broadly classified into 3 main sections: 
+
+Initial Setup
+Building Enterprise data estate
+Derive Insights
 
 ## Setting up Permissions 
 
