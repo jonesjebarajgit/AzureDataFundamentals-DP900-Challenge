@@ -34,94 +34,23 @@ Ensure that these services are not blocked by Azure Policy.  As this is an open 
    Eg: megha-group1-rg
    ```
 
-2. The latest version of the Azure PowerShell cmdlets do **NOT** work with this script. You will need to use an earlier version (noted below)
+2. Create SQL Database Server (logical) and load the database from the given dacpac file. 
 
-    ```PowerShell
-    Install-Module -Name Az -RequiredVersion 4.2.0 -Force -AllowClobber -SkipPublisherCheck
+    ```
+    a) Create SQL Database Server (logical) into the new created resource group. Name the SQL Database Server as **<collegename><group#>sqlserver**. Please note that this is a empty logical server with no database in it.
+    b) Once the SQL Database Server is created, under the **"Overview"** section, use the **"Import database"** feature and load the backup data in the dacpac file   into SQL Database Server. Name the database as **"covid19"**
     ```
 
-    > Note: If you need to uninstall first: [Uninstall the Azure PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/uninstall-az-ps)
+3. Create a new Cosmos DB for NoSQL account with naming convension **<collegename><group#>cosmosdb**. Add a new container called **"covid19"** with autoscale database max RU/s set to 400. 
 
-3. If you installed an update, **close** the PowerShell 7 window, then **re-open** it. This ensures that the latest version of the Az module is used.
+4. Load the csv file **"covid_policy_tracker.csv"** into the Cosmos DB container **"covid19"** using Azure Data Factory 
 
-4. Execute the following to sign in to the Azure account that has the **Owner** role assignment in your subscription.
-
-    ```PowerShell
-    Connect-AzAccount
+    ```
+    a) Create a new Azure data factory instance in your resoruce group (say **<collegename><group#>adf**). 
+    b) Launch the data factory studio and use the copy data tool feature to load the data in the **"covid_policy_tracker.csv"** to cosmosdb **"covid19"** container.
+     
     ```
 
-5. If you have more than one subscription, be sure to select the right one before the next step. Use `Get-AzSubscription` to list them and then use the command below to set the subscription you're using:
+5. Now  you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured). These will act as 2 sources of data in this challenge. 
 
-    ```powershell
-    Select-AzSubscription -Subscription <The selected Subscription Id>
-    ```
-
-6. If you have not already done so, fork this repository into your own git handle and use the following command to clone the repo to the current directory on local computer:
-
-   ```shell
-   git clone https://github.com/<your git handle>/AzureAnalyticsOH.git
-   ```
-   
-7. Execute the following from the `LabDeployment\deploy` directory of the hack repository clone to deploy the environment (this process may take 10-15 minutes):
-
-    ```powershell
-     .\deployAll.ps1 -
-    ```
-
-### Manual step - Assigning Users to Each Resource Group 
-
-After deployment, manually add the appropriate users with owner access on the appropriate resource group for their team. 
-
-**Some functionality within Synapse Studio will require the Storage Blob Data Contributor role for each user.**
-
-See the following for detailed instructions for assigning users to roles.
-
-[Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)
-
-## Validate 
-Resource Groups exist for each of the teams, members are in each team appropriately with owner permission on the resource group.
-
-Prerequisites/other things to check for each team:
-
-The deployment of the COVID19 Modern Data Warehousing hack Lab environment includes the following for each team.
-
-##### COVID Policy Resources
-
-- A Cosmos DB account with a single collection for the covid policy tracker data
-
-##### COVID Case Resources
-
-- One Azure SQL DB in a single logical server
-- A VM with a SQL DB
-
-##### COVID Data Warehouse Resources
-
-- Synapse Workspace as a potential target data store
-
-##### Cosmos db policy data manual loading steps 
-
-If the data in the cosmos db is not available, please follow manual steps to load it. 
-
-1. Download Azure document db data migration tool from https://www.microsoft.com/en-us/download/details.aspx?id=46436 
-2. Follow the instructions in the migration tool document to load CSV data from your repo to cosmos db through dbui application
-
-
-## More detail on the usage of the services
-
-##### azuredeploy.json
-
-This deployment template links each of the others. The only dependency between the linked templates is that the deploysqlvm.json template depends on deploycosmosdb.json; the SQL VM's extension populates the Cosmos DB.
-
-##### Parameters
-
-Note that using the `azuredeploy.parameters.json` will supply most of these parameters for you. 
-
-- sqlAdminLogin: The SQL administrator username for **all** SQL DBs in this deployment.
-- **sqlAdminLoginPassword**: The password for the SqlAdminLogin on **all** SQL DBs in this deployment.
-- covid19DacPacFileName: The filename for the .bacpac imported into the covid19 DB.
-- vmAdminUsername: The administrator username for **all** VMs in this deployment
-- **vmAdminPassword**: The password the for administrator on **all** VMs in this deployment
-- covid19BackupFileName: The filename for the .bak imported into the "on-premises" VM
-- covid19DatabaseName: The name of the "on-premises" database restored into the VM
-- cloudFictitiousCompanyNamePrefix: The fictitious company name (prefix) for the resources deployed in a subscription
-- **location**: The target Azure region
+    
