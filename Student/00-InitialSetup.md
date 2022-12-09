@@ -68,7 +68,7 @@ The following is a list of common Azure resources that are required and utilized
 
    Create a Cosmos DB for NoSQL and Add a new container called **"covid19"** with autoscale database max RU/s set to 400. 
 
-6. **Load the csv file into the Cosmos DB: **
+6. **Load the csv file into the Cosmos DB:**
 
    Load the csv file **"covid_policy_tracker.csv"** into the Cosmos DB container **"covid19"** using Azure Data Factory 
 
