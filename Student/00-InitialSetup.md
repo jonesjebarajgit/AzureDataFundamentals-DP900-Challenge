@@ -1,14 +1,6 @@
-# Introduction and Initial Setup
+# Initial Setup
 
 **[Home](../README.md)** - [Next Challenge >](./01-Background.md)
-
-## Introduction
-
-The goal of this challenge is to give students with hands-on experience of working with Azure Data Services. This challenge is broadly classified into 3 main sections: 
-
-1) Initial Setup 
-2) Building Enterprise data estate 
-3) Derive Insights
 
 ## Setting up Permissions 
 
@@ -16,25 +8,24 @@ Before continuing ensure you understand the permissions needed to run the challe
 
 Attendees should have Azure subscription permissions which allow the creation of resources in their resource group. Additionally, attendees should have sufficient subscription permissions to create service principals in Azure AD and to register applications in Azure AD. Typically, all that is required is a user account with `Owner` role on their resource group.
 
-## Common Azure Resources
+## Common Azure Resources and naming convensions
 
-The following is a list of common Azure resources that are required and utilized during the challenge. 
+The following is a list of common Azure resources that are required and utilized during the challenge. Ensure that you follow the below standard naming convensions for creating these resources to avoid naming conflicts with your fellow teams.
 
-Ensure that these services are not blocked by Azure Policy.  As this is an open hack, the services that attendees can utilize are not limited to this list so subscriptions with a tightly controlled service catalog may run into issues if the service an attendee wishes to use is disabled via policy.
-
-| Azure resource           | Resource Providers |
+| Azure resource           | Naming Convensions |
 | ------------------------ | --------------------------------------- |
-| Azure Cosmos DB          | Microsoft.DocumentDB 
-| Azure Data Factory       | Microsoft.DataFactory                   |
-| Azure SQL Database       | Microsoft.SQL                           |
-| Azure Storage            | Microsoft.Storage                       |
-| Azure Data Lake Store    | Microsoft.DataLakeStore                 |
-| Azure Synapse            | Microsoft.Synapse                       |
+| Azure Cosmos DB          | <collegename><group#>cosmosdb           |
+| Azure Data Factory       | <collegename><group#>adf                |
+| Azure SQL Database       | <collegename><group#>sqldb              |
+| Azure Storage            | <collegename><group#>storageac          |
+| Azure Data Lake Store    | <collegename><group#>adls               |
+| Azure Synapse            | <collegename><group#>synapsews          |
 
+## Deployment Instructions
 
-## Deployment Instructions 
-
-1. Login to Azure Portal and create a new **resource group** where you can create all the resources needed for this challenge. 
+   Login to Azure Portal and create the below resources that we will be using in this challenge. Ensure you follow the standard naming convension.
+   
+1. Create a Resource Group: Create a new **resource group** where you can create all the resources needed for this challenge. 
 
    ```
    Lets say <collegename>-group#-rg 
