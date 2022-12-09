@@ -25,17 +25,23 @@ The following is a list of common Azure resources that are required and utilized
 
    Login to Azure Portal and create the below resources that we will be using in this challenge. Ensure you follow the standard naming convension.
    
-1. Create a Resource Group: Create a new **resource group** where you can create all the resources needed for this challenge. 
+1. **Create a Resource Group:** Create a new **resource group** where you can create all the resources needed for this challenge. 
 
    ```
    Lets say <collegename>-group#-rg 
    Eg: megha-group1-rg
    ```
 
-2. Create SQL Database Server (logical) and load the database from the given dacpac file. 
+2. **Create a Azure Storage Account and upload files:**
 
+   Create a Azure storage account and upload both the below files from 
+
+
+4. **Create SQL Database Server (logical) and load the database from the given dacpac file:** 
+
+   
     ```
-    a) Create SQL Database Server (logical) into the new created resource group. Name the SQL Database Server as <collegename><group#>sqlserver. Please note that this is a empty logical server with no database in it.
+    a) Create SQL Database Server (logical) into the new created resource group. Name the SQL Database Server as (collegename)(group#)sqlserver. Please note that this is a empty logical server with no database in it.
     b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the dacpac file into SQL Database Server. Name the database as "covid19".
     ```
 
