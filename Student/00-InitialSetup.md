@@ -76,4 +76,15 @@ The following is a list of common Azure resources that are required and utilized
       b) Please note that the data in source is of CSV format and needs to be converted to JSON when loaded into Cosmos DB container
         
 7. **Your Source Data is Ready now:** Now that you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured), these will act as 2 sources of data in this challenge. 
+
+
+## Success Criteria
+
+   The below tasks should have been completed towards the end of this challenge
+   
+   1. Successful create of a resource group to host all your resources in this challenge
+   2. Successful creation of Azure storage account with datasets 
+   3. Successful creation and loading of Azure SQL database with Covid19 data from dacpac file
+   4. Successful creation and loading of Cosmos DB for NoSQL account with CSV file
+   5. Successful creation of Azure Data factory pipeline to load Cosmos DB data
    
