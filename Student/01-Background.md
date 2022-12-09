@@ -36,3 +36,21 @@ In this exercise you have to provision a data warehouse and using ADF pipelines 
 3. Successfully create the tables as given in the DDL scripts
 4. The team has created a data pipeline in ADF to load synapse tables from the data in Raw layer
 5. Ensure that the tables are loaded properly with the transformations applied
+
+## Learning Resources
+
+### Ramp Up
+
+- [Data lakes](https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake)
+- [Data Lakes and Data Warehouses: Why You Need Both](https://www.arcadiadata.com/blog/data-lakes-and-data-warehouses-why-you-need-both/)
+
+### Choose Your Tools
+- [What is Azure Synapse](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
+- [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
+- [What is Azure Blob storage?](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
+
+### Dive In
+
+- [Quickstart: Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- [Get started with Azure Data Lake Storage Gen1 using the Azure portal](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
+- [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal)
