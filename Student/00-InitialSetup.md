@@ -14,12 +14,12 @@ The following is a list of common Azure resources that are required and utilized
 
 | Azure resource           | Naming Convensions |
 | ------------------------ | --------------------------------------- |
-| Azure Cosmos DB          | <collegename><group#>cosmosdb           |
-| Azure Data Factory       | <collegename><group#>adf                |
-| Azure SQL Database       | <collegename><group#>sqldb              |
-| Azure Storage            | <collegename><group#>storageac          |
-| Azure Data Lake Store    | <collegename><group#>adls               |
-| Azure Synapse            | <collegename><group#>synapsews          |
+| Azure Cosmos DB          | <collegename>group#cosmosdb           |
+| Azure Data Factory       | <collegename>group#adf                |
+| Azure SQL Database       | <collegename>group#sqldb              |
+| Azure Storage            | <collegename>group#storageac          |
+| Azure Data Lake Store    | <collegename>group#adls               |
+| Azure Synapse            | <collegename>group#synapsews          |
 
 ## Deployment Instructions
 
