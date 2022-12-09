@@ -5,11 +5,12 @@
 In this exercise you have to provision a data warehouse and using ADF pipelines load data from both the source systems in Azure SQL and Cosmos DB into the warehouse.
 
 
-# Provision a Synapse DW Pool for Data Warehouse enviornment:
+# Instructions:
 
-From the azure portal, search for azure synapse analytics resource and provision a synapse workspace (say <collegename><group#>synapsews). Please note that you will have to create a data lake as well. Ensure that you make a note of the passwords for SQL server login.
+1. **Create a Data Warehouse in Azure:**
 
-Once the synapse workspace is created, provision a SQL DW Pool with 100 DWU capacity. 
+   a) From the azure portal, search for azure synapse analytics resource and provision a synapse workspace (say (collegename)(group#)synapsews). Please note that you will have to create a data lake as well. Ensure that you make a note of the passwords for SQL server login for future references. 
+   b) Once the synapse workspace is created, provision a SQL DW Pool with 100 DWU capacity. 
 
 
 ## Success Criteria 
