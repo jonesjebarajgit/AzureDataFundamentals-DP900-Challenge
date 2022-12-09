@@ -1,4 +1,4 @@
-# Initial Setup
+# Challenge 1: Initial Setup
 
 **[Home](../README.md)** - [Next Challenge >](./01-Background.md)
 
