@@ -1,4 +1,4 @@
-# Challenge 2: Provision
+# Challenge 3: Analytics and Insights
 
 [< Previous Challenge](./01-Background.md) - **[Home](../README.md)** - [Next Challenge >](./03-CloudIngest.md)
 
