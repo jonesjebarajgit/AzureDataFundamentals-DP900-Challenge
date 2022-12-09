@@ -72,8 +72,8 @@ The following is a list of common Azure resources that are required and utilized
 
    Load the csv file **"covid_policy_tracker.csv"** into the Cosmos DB container **"covid19"** using Azure Data Factory 
 
-      a) Launch the data factory studio and use the copy data tool feature to load the data in the **"covid_policy_tracker.csv"** to cosmosdb "covid19" container.
+      a) Launch the data factory studio and use the copy data tool feature to load the data in the **"covid_policy_tracker.csv"** to cosmosdb "covid19" container. 
       b) Please note that the data in source is of CSV format and needs to be converted to JSON when loaded into Cosmos DB container
         
-7. Now  you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured). These will act as 2 sources of data in this challenge. 
+7. **Your Source Data is Ready now:** Now that you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured), these will act as 2 sources of data in this challenge. 
    
