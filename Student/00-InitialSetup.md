@@ -34,26 +34,46 @@ The following is a list of common Azure resources that are required and utilized
 
 2. **Create a Azure Storage Account and upload files:**
 
-   Create a Azure storage account and upload both the below files from 
-
-
-4. **Create SQL Database Server (logical) and load the database from the given dacpac file:** 
-
+   a) Create a Azure storage account within the newly created reource group. 
    
+   b) Once the storage account is provisioned, upload both the below files from AzureDataFundamentals/setup/LabDeployment/data.
+   
+      covid19.bacpac
+      covid_policy_tracker.csv
+
+   This storage account is from where we will forklift both these files to Azure SQL DB and Cosmos DB respectively.
+   
+3. **Create SQL Database Server (logical) and load the database from the given dacpac file:** 
+
+    a) Create SQL Database Server (logical) within the newly created resource group. Name the SQL Database Server as (collegename)(group#)sqlserver. Please note that this is a empty logical server with no database in it yet.
+    b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the dacpac file (from storage account) into SQL Database Server. Name the database as "covid19".
+    c) Download and Install Azure data Studio in your laptop / desktop. We will use Azure Data Studio to access and query data in databases
+    d) From Azure data studio connect to your SQL database and ensure the data is properly loaded.
+
     ```
-    a) Create SQL Database Server (logical) into the new created resource group. Name the SQL Database Server as (collegename)(group#)sqlserver. Please note that this is a empty logical server with no database in it.
-    b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the dacpac file into SQL Database Server. Name the database as "covid19".
+    Ensure the below 3 tables are loaded and available 
+      dbo.Country
+      dbo.Covid19_Metrics
+      dbo.Dates
     ```
 
-3. Create a new Cosmos DB for NoSQL account (say **"<collegename><group#>cosmosdb"**). Add a new container called **"covid19"** with autoscale database max RU/s set to 400. 
+4. **Create a Azure Data Factory:**
 
-4. Load the csv file **"covid_policy_tracker.csv"** into the Cosmos DB container **"covid19"** using Azure Data Factory 
+   Create a Azure Data Factory instance within your resource group. We will use Data Factory service to 
+   
+   1. Copy data from Azure Storage account (covid_policy_tracker.csv) to Cosmos DB for NoSQL account
+   2. To move data from Azure SQL and Cosmos DB to Azure Data Lake and then to Synapse DW Pool with transformations
 
-    ```
-    a) Create a new Azure data factory instance in your resoruce group (say <collegename><group#>adf). 
-    b) Launch the data factory studio and use the copy data tool feature to load the data in the **"covid_policy_tracker.csv"** to cosmosdb "covid19" container.
-     
-    ```
+5. **Create a new Cosmos DB for NoSQL account:** 
 
-5. Now  you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured). These will act as 2 sources of data in this challenge. 
+   Create a Cosmos DB for NoSQL and Add a new container called **"covid19"** with autoscale database max RU/s set to 400. 
+
+6. **Load the csv file into the Cosmos DB: **
+
+   Load the csv file **"covid_policy_tracker.csv"** into the Cosmos DB container **"covid19"** using Azure Data Factory 
+
+      a) Launch the data factory studio and use the copy data tool feature to load the data in the **"covid_policy_tracker.csv"** to cosmosdb "covid19" container.
+      b) Please note that the data in source is of CSV format and needs to be converted to JSON when loaded into Cosmos DB container
+        
+7. Now  you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured). These will act as 2 sources of data in this challenge. 
    
