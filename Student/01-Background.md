@@ -19,10 +19,10 @@ In this exercise you have to provision a data warehouse and using ADF pipelines 
    
    b) We will have to load the covid metrics data from Azure SQL DB into "covidmetrics" sub directory and covid policy data from cosmos db to "covidpolicy" sub directory using ADF pipeline
 
-3. Create the target tables in Synapse Data warehouse as per the DDL scripts provided. 
+3. **Create the target tables in Synapse Data warehouse as per the DDL scripts provided:** 
 
 
-4. Transformation and Loading
+4. **Transformation and Loading:**
 
    a) Once the target tables in Synapse SQL DW Pool are ready, using a ADF pipeline load them from the data in the Raw layer in Data Lake
    
