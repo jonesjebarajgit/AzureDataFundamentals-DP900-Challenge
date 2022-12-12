@@ -59,10 +59,12 @@ The following is a list of common Azure resources that are required and utilized
     
          Database Name: covid19
          SKU: Standard (DTU = 10, Max Data Size = 250 GB)
-             
+              
     c) Download and Install Azure data Studio in your laptop / desktop. We will use Azure Data Studio to access and query data in databases.
     
+    
     [Azure Data Studio Download and Install](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16)
+    
     
     d) From Azure data studio connect to your SQL database "covid19" and ensure the connection is successful and you are able to query the data.
 
@@ -77,8 +79,9 @@ The following is a list of common Azure resources that are required and utilized
 
    Create a Azure Data Factory instance within your resource group. We will use Data Factory service to 
    
-   1. Copy data from Azure Storage account (covid_policy_tracker.csv) to Cosmos DB for NoSQL account
-   2. To move data from Azure SQL and Cosmos DB to Azure Data Lake and then to Synapse DW Pool with transformations
+   a) Copy data from Azure Storage account (covid_policy_tracker.csv) to Cosmos DB for NoSQL account
+   
+   b) To move data from Azure SQL and Cosmos DB to Azure Data Lake and then to Synapse DW Pool with transformations
 
 5. **Create a new Cosmos DB for NoSQL account:** 
 
@@ -113,4 +116,6 @@ The following is a list of common Azure resources that are required and utilized
 - [How to create a Storage Account in Azure?](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 - [How to create a Container in Azure Storage Account?](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal)
 - [How to Import Database from bacpac file into SQL Server?](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import?view=azuresql&tabs=azure-powershell#using-azure-portal)
+- [How to connect and query Azure SQL DB from Azure Data Studio?](https://learn.microsoft.com/en-us/sql/azure-data-studio/quickstart-sql-database?view=sql-server-ver16)
+- [How to create a Azure Data Factory?](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
 - 
