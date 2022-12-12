@@ -83,9 +83,19 @@ The following is a list of common Azure resources that are required and utilized
    
    b) To move data from Azure SQL and Cosmos DB to Azure Data Lake and then to Synapse DW Pool with transformations
 
+
 5. **Create a new Cosmos DB for NoSQL account:** 
 
-   Create a Cosmos DB for NoSQL and Add a new container called **"covid19"** with autoscale database max RU/s set to 400. 
+   
+   Create a Cosmos DB for NoSQL account and Add a new container called **"covid19"**. 
+
+      Parameters to consider:
+      
+         Autoscale database max RU/s = 1000 
+         Partition Key = /ColumnName
+
+         Rest all properties can be to be default.
+
 
 6. **Load the csv file into the Cosmos DB:**
 
@@ -95,7 +105,7 @@ The following is a list of common Azure resources that are required and utilized
       
       b) Please note that the data in source is of CSV format and needs to be converted to JSON when loaded into Cosmos DB container
         
-7. **Your Source Data is Ready now:** Now that you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured), these will act as 2 sources of data in this challenge. 
+7. **Your Source Data is now Ready:** Now that you have covid data in both Azure SQL (structured) and in Cosmos db (semi structured), these will act as 2 sources of data in this challenge. 
 
 
 ## Success Criteria
@@ -119,3 +129,4 @@ The following is a list of common Azure resources that are required and utilized
 - [How to connect and query Azure SQL DB from Azure Data Studio?](https://learn.microsoft.com/en-us/sql/azure-data-studio/quickstart-sql-database?view=sql-server-ver16)
 - [How to create a Azure Data Factory?](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
 - [How to create a Cosmos DB Account, Database, Container?](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal)
+- [How to use copy data tool in Azure data factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool)
