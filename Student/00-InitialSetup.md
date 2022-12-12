@@ -36,6 +36,13 @@ The following is a list of common Azure resources that are required and utilized
 
    a) Create a Azure storage account within the newly created reource group. 
    
+      Parameters to consider:
+      
+         Performance Tier: Standard
+         Redundancy: LRS
+
+         Rest all properties can be to be default.
+      
    b) Once the storage account is provisioned, upload both the below files from AzureDataFundamentals/setup/LabDeployment/data.
    
       covid19.bacpac
