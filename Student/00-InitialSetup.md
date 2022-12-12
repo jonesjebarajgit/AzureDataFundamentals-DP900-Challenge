@@ -43,9 +43,10 @@ The following is a list of common Azure resources that are required and utilized
 
          Rest all properties can be to be default.
       
-   b) Once the storage account is provisioned, upload both the below files from AzureDataFundamentals/setup/LabDeployment/data.
+   b) Once the storage account is provisioned, create a new container called **"sourcefiles"** and upload both the below files from AzureDataFundamentals/setup/LabDeployment/data.
    
-      covid19.bacpac
+      covid19.bacpac 
+      
       covid_policy_tracker.csv
 
    This storage account is from where we will forklift both these files to Azure SQL DB and Cosmos DB respectively.
