@@ -9,7 +9,9 @@ In this exercise you have to provision a data lake, data warehouse and using ADF
 
 1. **Create a Data Lake in Azure:**
 
-   a) From the azure portal, search for azure data lake gen2 resource and provision a Data lake (say (collegename)(group#)adls). 
+   a) From the azure portal, search for azure storage account  and provision a Data lake (say (collegename)(group#)adls). 
+   
+      To provision a data lake gen2, ensure you enable the "Enable hierarchical namespace".
    
    b) Once the data lake is provisioned, create a directory "raw" where data from both the source systems (Azure SQL and Cosmos DB) can be landed.
    
