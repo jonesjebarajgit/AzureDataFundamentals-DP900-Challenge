@@ -53,9 +53,12 @@ The following is a list of common Azure resources that are required and utilized
    
 3. **Create SQL Database Server (logical) and load the database from the given dacpac file:** 
 
-    a) Create SQL Database Server (logical) within the newly created resource group. Name the SQL Database Server as (collegename)(group#)sqlserver. Please note that this is a empty logical server with no database in it yet.
-    b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the dacpac file (from storage account) into SQL Database Server. Name the database as "covid19".
-    c) Download and Install Azure data Studio in your laptop / desktop. We will use Azure Data Studio to access and query data in databases
+    a) Create SQL Database Server (logical) within the newly created resource group. Name the SQL Database Server as (collegename)(group#)sqlserver. Please note that this is a empty logical server with no database in it yet. 
+    
+    b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the dacpac file (from storage account) into SQL Database Server. Name the database as "covid19". 
+    
+    c) Download and Install Azure data Studio in your laptop / desktop. We will use Azure Data Studio to access and query data in databases 
+    
     d) From Azure data studio connect to your SQL database and ensure the data is properly loaded.
 
     ```
