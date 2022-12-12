@@ -25,7 +25,7 @@ In this exercise you have to provision a data lake, data warehouse and using ADF
 
 2. **Ingest the data from Azure SQL DB and Cosmos DB into Azure Data Lake using ADF:**
 
-   a) Within the "Raw" Layer create 2 sub directories called "covidmetrics" and "covidpolicy". 
+   a) Within the "Raw" Layer create 2 sub directories called "covidmetrics" and "covidpolicy". Further you have to create sub directories under "covidmetrics" for each file from the Azure SQL DB source ("country", "covid19metrics", "dates")
    
    b) We will have to load the covid metrics data from Azure SQL DB into "covidmetrics" sub directory and covid policy data from cosmos db to "covidpolicy" sub directory using ADF pipeline
 
