@@ -51,15 +51,20 @@ The following is a list of common Azure resources that are required and utilized
 
    This storage account is from where we will forklift both these files to Azure SQL DB and Cosmos DB respectively.
    
-3. **Create SQL Database Server (logical) and load the database from the given dacpac file:** 
+3. **Create SQL Database Server (logical) and load the database from the given bacpac file:** 
 
     a) Create SQL Database Server (logical) within the newly created resource group. Name the SQL Database Server as (collegename)(group#)sqlserver. Please note that this is a empty logical server with no database in it yet. 
     
-    b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the dacpac file (from storage account) into SQL Database Server. Name the database as "covid19". 
+    b) Once the SQL Database Server is created, under the "Overview" section, use the "Import database" feature and load the backup data in the bacpac file (from storage account) into SQL Database Server. 
     
-    c) Download and Install Azure data Studio in your laptop / desktop. We will use Azure Data Studio to access and query data in databases 
+         Database Name: covid19
+         SKU: Standard (DTU = 10, Max Data Size = 250 GB)
+             
+    c) Download and Install Azure data Studio in your laptop / desktop. We will use Azure Data Studio to access and query data in databases.
     
-    d) From Azure data studio connect to your SQL database and ensure the data is properly loaded.
+    [Azure Data Studio Download and Install](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16)
+    
+    d) From Azure data studio connect to your SQL database "covid19" and ensure the connection is successful and you are able to query the data.
 
     ```
     Ensure the below 3 tables are loaded and available 
@@ -96,7 +101,7 @@ The following is a list of common Azure resources that are required and utilized
    
    1. Successful create of a resource group to host all your resources in this challenge
    2. Successful creation of Azure storage account with datasets 
-   3. Successful creation and loading of Azure SQL database with Covid19 data from dacpac file
+   3. Successful creation and loading of Azure SQL database with Covid19 data from bacpac file
    4. Successful creation and loading of Cosmos DB for NoSQL account with CSV file
    5. Successful creation of Azure Data factory pipeline to load Cosmos DB data
    
@@ -107,4 +112,5 @@ The following is a list of common Azure resources that are required and utilized
 - [What is a Azure Resource Group?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
 - [How to create a Storage Account in Azure?](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 - [How to create a Container in Azure Storage Account?](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal)
+- [How to Import Database from bacpac file into SQL Server?](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import?view=azuresql&tabs=azure-powershell#using-azure-portal)
 - 
