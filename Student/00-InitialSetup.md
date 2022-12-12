@@ -100,8 +100,8 @@ The following is a list of common Azure resources that are required and utilized
 
 ### Ramp Up
 
-- [What is a Azure Resource Group?](https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
-- [What is a Azure Resource Group?](https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+- [What is a Azure Resource Group?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+- 
 
 ### Choose Your Tools
 - [What is Azure Synapse](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
