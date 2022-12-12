@@ -45,9 +45,9 @@ The following is a list of common Azure resources that are required and utilized
       
    b) Once the storage account is provisioned, create a new container called **"sourcefiles"** and upload both the below files from AzureDataFundamentals/setup/LabDeployment/data.
    
-      covid19.bacpac 
+         covid19.bacpac 
       
-      covid_policy_tracker.csv
+         covid_policy_tracker.csv
 
    This storage account is from where we will forklift both these files to Azure SQL DB and Cosmos DB respectively.
    
@@ -99,18 +99,9 @@ The following is a list of common Azure resources that are required and utilized
    
 ## Learning Resources
 
-### Ramp Up
+### Reference Documentations
 
 - [What is a Azure Resource Group?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+- [How to create a Storage Account in Azure?](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
+- [How to create a Container in Azure Storage Account?](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal)
 - 
-
-### Choose Your Tools
-- [What is Azure Synapse](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
-- [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
-- [What is Azure Blob storage?](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
-
-### Dive In
-
-- [Quickstart: Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account)
-- [Get started with Azure Data Lake Storage Gen1 using the Azure portal](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
-- [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal)
