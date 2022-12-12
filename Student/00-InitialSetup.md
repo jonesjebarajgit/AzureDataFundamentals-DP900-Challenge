@@ -118,4 +118,4 @@ The following is a list of common Azure resources that are required and utilized
 - [How to Import Database from bacpac file into SQL Server?](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import?view=azuresql&tabs=azure-powershell#using-azure-portal)
 - [How to connect and query Azure SQL DB from Azure Data Studio?](https://learn.microsoft.com/en-us/sql/azure-data-studio/quickstart-sql-database?view=sql-server-ver16)
 - [How to create a Azure Data Factory?](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
-- 
+- [How to create a Cosmos DB Account, Database, Container?](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal)
