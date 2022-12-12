@@ -89,3 +89,20 @@ The following is a list of common Azure resources that are required and utilized
    4. Successful creation and loading of Cosmos DB for NoSQL account with CSV file
    5. Successful creation of Azure Data factory pipeline to load Cosmos DB data
    
+## Learning Resources
+
+### Ramp Up
+
+- [Data lakes](https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake)
+- [Data Lakes and Data Warehouses: Why You Need Both](https://www.arcadiadata.com/blog/data-lakes-and-data-warehouses-why-you-need-both/)
+
+### Choose Your Tools
+- [What is Azure Synapse](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
+- [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
+- [What is Azure Blob storage?](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
+
+### Dive In
+
+- [Quickstart: Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- [Get started with Azure Data Lake Storage Gen1 using the Azure portal](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
+- [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal)
