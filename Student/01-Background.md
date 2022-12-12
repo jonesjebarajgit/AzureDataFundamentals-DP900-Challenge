@@ -2,22 +2,31 @@
 
 **[Home](../README.md)** - [Next Challenge >](./02-Provision.md)
 
-In this exercise you have to provision a data warehouse and using ADF pipelines load data from both the source systems in Azure SQL and Cosmos DB into the warehouse.
+In this exercise you have to provision a data lake, data warehouse and using ADF pipelines load data from both the source systems in Azure SQL and Cosmos DB into the warehouse.
 
 
 # Instructions:
 
-1. **Create a Data Warehouse in Azure:**
+1. **Create a Data Lake in Azure:**
 
-   a) From the azure portal, search for azure synapse analytics resource and provision a synapse workspace (say (collegename)(group#)synapsews). Please note that you will have to create a data lake as well. Ensure that you make a note of the passwords for SQL server login for future references. 
+   a) From the azure portal, search for azure data lake gen2 resource and provision a Data lake (say (collegename)(group#)adls). 
+   
+   b) Once the data lake is provisioned, create a directory "raw" where data from both the source systems (Azure SQL and Cosmos DB) can be landed.
+   
+
+2. **Create a Data Warehouse in Azure:**
+
+   a) From the azure portal, search for azure synapse analytics resource and provision a synapse workspace (say (collegename)(group#)synapsews). Ensure that you make a note of the passwords for SQL server login for future references. 
    
    b) Once the synapse workspace is created, provision a SQL DW Pool with 100 DWU capacity. 
+   
 
 2. **Ingest the data from Azure SQL DB and Cosmos DB into Azure Data Lake using ADF:**
 
-   a) create a new directory in Azure Data Lake called "Raw". And then within raw create 2 sub directories called "covidmetrics" and "covidpolicy". 
+   a) Within the "Raw" Layer create 2 sub directories called "covidmetrics" and "covidpolicy". 
    
    b) We will have to load the covid metrics data from Azure SQL DB into "covidmetrics" sub directory and covid policy data from cosmos db to "covidpolicy" sub directory using ADF pipeline
+
 
 3. **Create the target tables in Synapse Data warehouse as per the DDL scripts provided:** 
 
