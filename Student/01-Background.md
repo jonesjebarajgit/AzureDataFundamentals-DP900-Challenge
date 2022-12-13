@@ -35,14 +35,19 @@ Please refer the following link for the reference architecture on building a [mo
    b) We will have to load the covid metrics data from Azure SQL DB into "covidmetrics" sub directory and covid policy data from cosmos db to "covidpolicy" sub directory using ADF pipeline
 
 
-3. **Create the target tables in Synapse Data warehouse as per the DDL scripts provided:** 
+3. **Create the target tables in Synapse Data warehouse:** 
+
+   The synapse target table DDL scripts are given at **/setup/Synapse Tables Script.txt**. 
+   
+   Using Azure Syanpase Studio build the target tables in the Synapse SQL Pool (DW). 
 
 
 4. **Transformation and Loading:**
 
-   a) Once the target tables in Synapse SQL DW Pool are ready, using a ADF pipeline load them from the data in the Raw layer in Data Lake
+   a) Once the target tables in Synapse SQL Pool are ready, extend the same ADF pipeline that was used to load the RAW layer and load data from the Raw Layer to the target tables in Synapse SQL Pool
    
-   b) Apply the transformations before loading data into the target tables. Transformations are given in the reference mapping docuemnt 
+   
+   b) Apply the transformations before loading data into the target tables. Ensure proper datatype conversions are inplace before loading data into Target tables. 
 
 
 ## Success Criteria 
