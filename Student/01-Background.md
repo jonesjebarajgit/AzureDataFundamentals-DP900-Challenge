@@ -4,6 +4,8 @@
 
 In this exercise you have to provision a data lake, data warehouse and using ADF pipelines load data from both the source systems in Azure SQL and Cosmos DB into the warehouse.
 
+Please refer the following link for the reference architecture on building a [modern data warehouse on Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/data-warehouse)
+
 
 # Instructions:
 
@@ -11,7 +13,10 @@ In this exercise you have to provision a data lake, data warehouse and using ADF
 
    a) From the azure portal, search for azure storage account  and provision a Data lake (say (collegename)(group#)adls). 
    
-      To provision a data lake gen2, ensure you enable the "Enable hierarchical namespace".
+         Tier - Standard
+         Redudancy - LRS
+         Enable hierarchical namespace = Check
+      
    
    b) Once the data lake is provisioned, create a directory "raw" where data from both the source systems (Azure SQL and Cosmos DB) can be landed.
    
@@ -20,7 +25,7 @@ In this exercise you have to provision a data lake, data warehouse and using ADF
 
    a) From the azure portal, search for azure synapse analytics resource and provision a synapse workspace (say (collegename)(group#)synapsews). Ensure that you make a note of the passwords for SQL server login for future references. 
    
-   b) Once the synapse workspace is created, provision a SQL DW Pool with 100 DWU capacity. 
+   b) Once the synapse workspace is created, provision a Dedicated SQL Pool (DataWarehouse) with 100 DWU capacity. 
    
 
 2. **Ingest the data from Azure SQL DB and Cosmos DB into Azure Data Lake using ADF:**
@@ -50,18 +55,8 @@ In this exercise you have to provision a data lake, data warehouse and using ADF
 
 ## Learning Resources
 
-### Ramp Up
+### Reference Links
 
-- [Data lakes](https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake)
-- [Data Lakes and Data Warehouses: Why You Need Both](https://www.arcadiadata.com/blog/data-lakes-and-data-warehouses-why-you-need-both/)
-
-### Choose Your Tools
-- [What is Azure Synapse](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
-- [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
-- [What is Azure Blob storage?](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
-
-### Dive In
-
-- [Quickstart: Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account)
-- [Get started with Azure Data Lake Storage Gen1 using the Azure portal](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
-- [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal)
+- [How to create a azure data lake gen2 account?](https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account)
+- [How to create a synapse workspace?](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace)
+- [How to create Synapse SQL DW Pool and query?](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/create-data-warehouse-portal)
